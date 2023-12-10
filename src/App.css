@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  padding: 0px;
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 4px;
+  box-shadow: 2px 2px 14px rgb(176, 176, 176);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  color: blue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-ques{
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  row-gap: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.main-ques p{
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: blue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options{
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 6px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.ques-op{
+  font-size: 17px;
+  padding: 8px;
+  box-shadow: 2px 2px 6px rgb(189, 189, 189);
+  width: 250px;
+  text-align: center;
+  border-radius: 4px;
+}
+.ques-op:hover{
+  box-shadow: 2px 2px 8px rgb(119, 139, 252);
+}
+.active{
+  border: 2px solid rgb(72, 159, 251);
+}
+.button{
+  width: 65px;
+  height: 20px;
+  border-radius: 7px;
+  box-shadow:2px 2px 6px rgb(189, 189, 189);
+  padding: 7px 8px;
+  margin: 30px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button:hover{
+  border: 2px solid rgb(72, 159, 251);
+}
+.result-area{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid  rgb(72, 159, 251);
+  box-shadow:2px 2px 4px rgb(189, 189, 189);
+  padding: 15px;
+  margin: 10px;
+  border-radius:7px;
 }
